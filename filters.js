@@ -7,6 +7,10 @@ export const Filters = {
             button.addEventListener('click', function() {
                 const videoBlock = document.getElementById('video')
                 videoBlock.style.filter = filterStyle
+                for (let button of buttons) {
+                    button.style.opacity = 0.2
+                }
+                button.style.opacity = 1
             })
             button.style.backgroundImage = `url(assets/images/cube${i + 1}.png)`
         }
