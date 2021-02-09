@@ -1,68 +1,33 @@
 @font-face {
-    font-family: comfortaa;
-    src: url(assets/comfortaaFont/Comfortaa-Light.ttf);
+  font-family: comfortaa;
+  src: url(assets/comfortaaFont/Comfortaa-Light.ttf);
 }
 
 #description {
-    margin: 20px;
+  margin: 20px;
 }
 
 body {
-    font-family: comfortaa;
-    margin: 0px auto;
-    max-width: 1000px;
-    line-height: 35px
+  font-family: comfortaa;
+  margin: 0px auto;
+  line-height: 35px;
+  height: 100%;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 50px;
+.camera {
+  height: 100%;
+  text-align:center;
 }
 
-h2 {
-  font-size: 35px;
-}
-
-* {
-/*     outline: 1px dotted magenta; */
-    margin: 20px 5px;
-}
-
-.project {
-/*   outline: 1px dotted magenta; */
-  margin-bottom: 40px;
-  padding: 5px;
-  border: 3px dashed #decbcb;
-  border-radius: 10px;
-}
-
-.photos {
-    white-space: nowrap;
-    max-width: 100%;
-    overflow-x: auto;
-    text-align: center;
-
-}
-
-.photos * {
-    display: inline-block;
-    max-height: 200px;
-    border: 3px dashed #decbcb;
-    border-radius: 10px;
-}
-.links * {
-    margin: 0px;
-}
-a {
-  color: #fff !important;
-  text-decoration: none;
-  margin-right: 50px !important;
-  background: black;
-  border-radius: 10px;
-  padding: 4px 13px;
-}
-
-
-.links > * {
-/*     margin-right: 30px; */
-    display: inline-block;
+#video {
+  display: inline-block;
+  height: 100%;
+  background: aqua;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
 }
