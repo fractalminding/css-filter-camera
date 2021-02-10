@@ -4,6 +4,7 @@ export const Camera = {
     },
     showVideo() {
         const video = document.getElementById('video')
+        console.log(navigator.mediaDevices.getUserMedia({video: true, audio: true}))
         navigator.mediaDevices.getUserMedia({video: true, audio: false})
         .then(function(stream) {
             video.srcObject = stream
