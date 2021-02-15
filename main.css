@@ -10,72 +10,83 @@
 body {
   font-family: comfortaa;
   margin: 0px auto;
-  max-width: 1000px;
   line-height: 35px;
-/*     background-color: #e7dddd; */
-color: #09015f;
+  height: 100%;
+  overflow: hidden;
 }
 
-h1 {
-font-size: 50px;
-}
-
-h2 {
-font-size: 35px;
-}
-
-h1, h2 {
-  color: #ffa0d9;
-}
-
-* {
-/*     outline: 1px dotted magenta; */
-  margin: 20px 5px;
-}
-
-.project {
-/*   outline: 1px dotted magenta; */
-margin-bottom: 40px;
-padding: 5px;
-background-color: #d8fff7;
-border-radius: 10px;
-}
-
-.project .text {
-/*   color: #295939; */
-}
-
-.project, .photos * {
-/*   border: 3px solid #e7dddd; */
-}
-
-.photos {
-  white-space: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+.camera {
+  height: 100%;
+  max-width: 1000px;
   text-align: center;
-
+  z-index: 1;
 }
 
-.photos * {
+#video {
   display: inline-block;
-  max-height: 200px;
-  border-radius: 10px;
-}
-.links * {
-  margin: 0px;
-}
-a {
-color: #d8fff7 !important;
-text-decoration: none;
-margin-right: 50px !important;
-background: #ffa0d9;
-border-radius: 10px;
-padding: 4px 13px;
+/*   width: 100%;
+  max-width: 1000px; */
+  height: 100%;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
 }
 
+#modes {
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  height: calc(100% - 20px);
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
 
-.links > * {
-/*     margin-right: 30px; */
+.mode {
+  width: 14%;
+  height: 15vw;
+  max-height: 150px;
+  background-size: cover;
   display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+  opacity: 0.2;
+}
+
+.mode:first-of-type {
+  opacity: 1;
+}
+
+#photo-menu {
+/*   border: 2px solid red; */
+/*   max-height: 50px; */
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 3;
+  text-align: center;
+}
+
+#take-photo, #change-camera {
+  display: inline-block;
+  background-image: url('assets/images/take-photo.png');
+/*   border: 2px solid red; */
+  background-size: cover;
+  width: 10%;
+  max-width: 100px;
+  height: 10vw;
+  max-height: 100px;
+  margin: 0px 40px;
+}
+
+#change-camera {
+  background-image: url('assets/images/change-camera.png');
 }
